@@ -1,0 +1,24 @@
+
+-------------------------------
+     -- Get one User --  
+
+syntax: collection_name.findOne({collection_field_name:collection_field_value})
+        User.findOne({name:name})
+
+
+--------------------------------
+    -- Get All Users -- 
+
+syntax: collection_name.find()
+        User.find()
+
+
+-------------------------------
+   -- Get All Books --
+
+syntac: collection_name.find()
+        Books.find()
+
+--------------------------------
+
+

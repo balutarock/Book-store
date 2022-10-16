@@ -1,0 +1,32 @@
+// Basic authentication
+###
+GET http://localhost:3007/home/ HTTP/1.1
+Authorization: Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJhbGEgbmFnZW5kcmEga3VtYXIiLCJpYXQiOjE2NjU4ODA3ODN9.-QzvEf_dSI-iD-ZqKj_JevbB7vrt8VVzGvnC04PBwBk
+Content-Type: application/json
+
+###
+GET http://localhost:3007/profile/ HTTP/1.1
+Authorization: Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJhbGEgbmFnZW5kcmEga3VtYXIiLCJpYXQiOjE2NjU4ODA3ODN9.-QzvEf_dSI-iD-ZqKj_JevbB7vrt8VVzGvnC04PBwBk
+Content-Type: application/json
+
+
+// The request body is provided in place
+###
+POST http://localhost:3007/signup/ HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "name" : "bala nagendra kumar", 
+    "email": "balutarock71117@gmail.com",
+    "password":"nagendra7@"
+}
+
+###
+
+POST http://localhost:3007/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "bala nagendra kumar",
+    "password":"nagendra7@"
+}
